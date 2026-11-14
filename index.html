@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AGallery 浏览器扩展隐私政策 / Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; font-family: "Segoe UI", "Microsoft YaHei", sans-serif; }
+    body { max-width: 820px; margin: 48px auto; padding: 0 24px 48px; line-height: 1.8; }
+    h1 { font-size: 28px; line-height: 1.4; }
+    h2 { margin-top: 32px; font-size: 20px; }
+    .meta { opacity: .72; }
+    hr { margin: 48px 0; opacity: .25; }
+    code { overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>AGallery 浏览器扩展隐私政策</h1>
+    <p class="meta">生效日期为 2026 年 11 月 14 日。适用版本为 0.1.5。</p>
+    <p>本政策说明 AGallery 的 Microsoft Edge 浏览器扩展如何处理网页采集功能涉及的信息。该扩展由 AGallery 扩展发布者提供，用于将用户选择的网页图片、视频和截图保存到用户本机的 AGallery 桌面素材库。</p>
+
+    <h2>处理的信息及用途</h2>
+    <p>扩展在网页中读取页面结构、媒体元素及媒体地址，用于提供拖拽采集、右键菜单、批量收藏和截图界面。用户发起采集时，扩展处理所选图片或视频、媒体文件地址、来源网页 URL、文件名及所选保存目标。用户发起截图时，扩展处理相应页面区域的图像；截图内容取决于用户选择的网页和截取区域。</p>
+    <p>来源网页 URL 随采集请求发送，用于在素材库中保留素材出处。浏览器表单中披露的 Web history 类别对应这些来源地址。扩展对鼠标、拖拽、滚动和快捷键事件的处理用于实现采集界面及截图操作。</p>
+
+    <h2>数据传输</h2>
+    <p>扩展从用户选择的媒体来源网站或 CDN 获取媒体文件。这些下载请求可使用浏览器为相应站点管理的会话凭据，并携带用于完成媒体请求的来源信息。扩展内置的请求规则会为受支持图片站点的扩展媒体请求设置相应 Referer。</p>
+    <p>采集的媒体或截图，以及对应来源地址、文件名和目标信息，会通过 <code>127.0.0.1</code> 的 19876、19877 或 19878 端口交给用户本机的 AGallery 桌面程序。扩展同时通过这些本机接口检查连接状态，并读取可选择的保存目标。</p>
+    <p>该扩展的数据使用目的限定为用户发起的网页采集、采集状态反馈和本机素材库管理。用户之后通过桌面程序配置的素材库同步或其他服务，适用对应服务的设置与隐私说明。</p>
+
+    <h2>设置和存储</h2>
+    <p>扩展使用浏览器的本地存储保存近期保存目标等设置，并使用浏览器的同步存储保存通知、拖拽菜单、采集行为和批量筛选等偏好。浏览器同步存储的跨设备行为由用户的 Microsoft Edge 账户及同步设置管理。</p>
+    <p>采集后的媒体文件、截图和来源信息由用户本机的 AGallery 素材库保存。保存时长由用户的素材库管理和删除操作决定。</p>
+
+    <h2>用户控制</h2>
+    <p>用户通过右键菜单、拖拽操作、弹出窗口或快捷键发起采集，并选择保存到的文件夹或集合。用户可以在扩展设置中调整通知、拖拽菜单和采集行为，在 Edge 设置中管理站点访问权限、扩展存储和浏览器同步，以及在 AGallery 桌面程序中查看或删除已保存素材。</p>
+
+    <h2>政策更新和联系</h2>
+    <p>扩展功能和数据处理方式发生变化时，发布者将更新本政策及其生效日期。有关本扩展和隐私处理的问题，请使用 Microsoft Edge Add-ons 中 AGallery 扩展页面列出的支持联系方式联系发布者。</p>
+
+    <hr>
+    <section lang="en">
+      <h1>AGallery Browser Extension Privacy Policy</h1>
+      <p class="meta">Effective November 14, 2026. Applies to version 0.1.5.</p>
+      <p>This policy describes data handling by the AGallery extension for Microsoft Edge, provided by the extension's publisher. The extension helps users collect selected web images, videos and screenshots into their local AGallery desktop asset library.</p>
+
+      <h2>Information processed and its purpose</h2>
+      <p>The extension reads page structure, media elements and media addresses to provide drag collection, context menus, batch collection and screenshot controls. When users initiate collection, it processes the selected media, media URLs, source page URLs, filenames and chosen destinations. Screenshot operations process images of the page regions selected by the user.</p>
+      <p>Source page URLs accompany collection requests to preserve asset attribution. The Web history disclosure in the browser store refers to these source addresses. Pointer, drag, scroll and keyboard events are handled to operate the collection interface and screenshot controls.</p>
+
+      <h2>Transfers and use</h2>
+      <p>Selected media is retrieved from its source website or CDN. Media requests can use the browser's applicable site-session credentials and source information. Bundled request rules set website-specific Referer headers for extension media requests to supported image hosts.</p>
+      <p>Selected media, screenshots, source URLs, filenames and destination information are sent to the user's local AGallery desktop application through ports 19876, 19877 or 19878 on <code>127.0.0.1</code>. These local interfaces also provide connection status and available save destinations.</p>
+      <p>The extension's data use is limited to user-initiated web collection, collection-status feedback and local asset-library management. Library synchronization or additional services configured separately in the desktop application follow those services' settings and privacy information.</p>
+
+      <h2>Storage and retention</h2>
+      <p>Browser local storage retains settings such as recent destination identifiers. Browser sync storage retains preferences such as notifications, drag controls, collection behavior and batch filters. Cross-device synchronization is governed by the user's Microsoft Edge account and browser sync settings.</p>
+      <p>Collected files, screenshots and source information are retained in the user's AGallery desktop library. Retention follows the user's library-management and deletion choices.</p>
+
+      <h2>User controls</h2>
+      <p>Users initiate collection through context menus, drag actions, the popup or keyboard shortcuts, and select a destination folder or collection. Users can adjust extension preferences, manage site access and browser synchronization in Edge, and view or delete collected assets in the AGallery desktop application.</p>
+
+      <h2>Updates and contact</h2>
+      <p>The publisher will update this policy and its effective date as extension functionality or data practices change. For privacy questions, use the support contact published on the AGallery listing in Microsoft Edge Add-ons.</p>
+    </section>
+  </main>
+</body>
+</html>
